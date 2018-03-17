@@ -1,0 +1,844 @@
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+.body {}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ol {
+    list-style-type: none;
+}
+
+img {
+    border: 0;
+}
+
+.contentwrapper {
+    width: 100%;
+}
+
+.content {
+    width: 1140px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/**** css start *******/
+
+/*---------------------*/
+/**** header part *****/
+/*---------------------*/
+
+.headerbg {
+    background-color: #282828;
+}
+
+.headerbody {}
+
+.logo {
+    width: 250px;
+    float: left;
+}
+
+.logo a img {
+    display: block;
+    padding: 57px 0px 40px;
+}
+
+.nav {
+    width: 890px;
+    float: left;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 61px 14px 35px;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.nav ul li a:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 50%;
+    background: #212323;
+    top: 92px;
+    left: 20px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.nav ul li a:before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 50%;
+    background: #FCBA63;
+    top: 92px;
+    right: 20px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.nav ul li:hover a {
+    color: #FCBA63;
+}
+
+.nav ul li:hover a::after {
+    opacity: 1;
+    left: 0;
+}
+
+.nav ul li:hover a:before {
+    opacity: 1;
+    right: 0;
+}
+
+.nav ul li.active a {
+    color: #FCBA63;
+}
+
+.nav ul .active a:after {
+    left: 5px;
+    opacity: 1;
+}
+
+.nav ul .active a:before {
+    opacity: 1;
+    right: 5px;
+}
+/*---------------------*/
+/**** header part end *****/
+/*---------------------*/
+
+/*---------------------*/
+/**** banner part *****/
+/*---------------------*/
+
+.bannerbg {
+    background-image: url(../images/banner/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.bannerbody {
+    padding: 180px 0px 88px;
+}
+
+.bannerbody h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #999999;
+    font-size: 44px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.bannerbody h2 span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 24px;
+    color: #FCAC45;
+}
+
+.bannerbody p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 20px;
+    color: #bcbcbc;
+    text-align: center;
+    padding-bottom: 280px
+}
+
+.bannerbody p span {
+    color: #c5c5c5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.bannerbody a {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ffffff;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.bannerbody a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #ffffff;
+    font-size: 20px;
+}
+/*---------------------*/
+/**** banner part end*****/
+/*---------------------*/
+
+
+/*---------------------*/
+/**** about us part ******/
+/*---------------------*/
+
+.aboutbody {
+    padding: 100px 0px 50px;
+}
+
+.leftimage {
+    float: left;
+    width: 654px;
+}
+
+.leftimage img {
+    display: block;
+}
+
+.rightcontent {
+    width: 400px;
+    float: left;
+}
+
+.rightcontent h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: #636363;
+    text-transform: capitalize;
+}
+
+.heading {
+    position: relative;
+}
+
+.rightcontent h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 33px;
+    line-height: 37px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.rightcontent h2:after {
+    width: 100px;
+    height: 3px;
+    content: '';
+    background: #FCAC45;
+    position: absolute;
+    left: 0;
+    top: 45px;
+}
+
+.rightcontent h2 span {
+    color: #222222;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.rightcontent p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #767676;
+    margin-bottom: 45px;
+}
+
+.rightcontent ul li {
+    color: #767676;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.rightcontent ul li:last-child {
+    margin-bottom: 50px;
+}
+
+.rightcontent ul li i {
+    margin-right: 5px;
+}
+
+.rightcontent a {
+    color: #767676;
+    border: 1px solid #767676;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+}
+/*---------------------*/
+/**** about us part end******/
+/*---------------------*/
+
+/*---------------------*/
+/**** out team part ****/
+/*---------------------*/
+
+.teampartbg {
+    background: #4B4B4B;
+}
+
+.teampartbody {
+    padding: 100px 0px 80px;
+}
+
+.commonheading {
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 5px;
+}
+
+.commonheading h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: lighter;
+    color: #ffff;
+    text-transform: uppercase;
+
+}
+
+.commonheading span {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.afterbefore:before {
+    content: '';
+    height: 4px;
+    width: 130px;
+    position: absolute;
+    background: #f49419;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.afterbefore:after {
+    content: '';
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    background: #C78F47;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teambg {
+    width: 250px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 0px 75px;
+    padding: 0px 0px 75px;
+}
+
+.teambody {}
+
+.marginleft {
+    margin-left: 45px;
+}
+
+.teambody .teamimage {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    padding-bottom: 23px;
+}
+
+.teamimage img {
+    display: block;
+}
+
+.teambody h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.teambody h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+.teambody p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+}
+
+.slideicon {
+    position: relative;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.slideicon li {
+    float: left;
+    margin-left: 10px;
+}
+
+.slideicon li a i {
+    color: white;
+}
+
+.slideicon li.active a i {
+    color: #C78F47;
+}
+/*---------------------*/
+/**** out team part end****/
+/*---------------------*/
+
+/*---------------------*/
+/**** services start ***/
+/*---------------------*/
+
+.servicesbg {}
+
+.servicesbody {
+    padding: 100px 0px 80px;
+}
+
+.servicesbody .commonheading h3 {
+    color: #222222;
+}
+
+.italicp {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #767171;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+}
+
+.servicesiconbg {
+    width: 260px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.servicesiconbody {
+    padding: 0px 5px;
+}
+
+.servicesiconbody .icon {
+    height: 127px;
+    width: 127px;
+    border: 4px solid #FCAC45;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.servicesiconbody .icon a i {
+    font-size: 60px;
+    color: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.servicesiconbody h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #222;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.servicesiconbody p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7c7676;
+    text-align: center;
+    line-height: 21px;
+}
+
+.servicesiconbg.marginleft {
+    margin-left: 30px;
+}
+/*---------------------*/
+/**** services end ***/
+/*---------------------*/
+
+/*---------------------*/
+/**** our clients part ***/
+/*---------------------*/
+
+.ourclientsbg {
+    background: #666666;
+}
+
+.ourclientsbg .ourclientsbody {
+    padding: 100px 0px;
+}
+
+.ourclientsbg .ourclientsbody .clientslogo {
+    margin: 0 auto;
+}
+
+.ourclientsbg .ourclientsbody .clientslogo .clientslogopic {
+    float: left;
+    display: block;
+    margin: 0px 31px;
+}
+
+/*---------------------*/
+/**** our clients part end***/
+/*---------------------*/
+
+/*---------------------*/
+/*our work start */
+/*---------------------*/
+
+.ourworkbg {
+    padding: 100px 0px 100px;
+}
+
+.ourworkbg .ourworkbody {}
+
+.ourworkbg .ourworkbody .commonheading h3 {
+    color: #222222;
+    padding-top: 5px;
+}
+
+.ourworkbg .ourworkbody .filter {
+    width: 100%;
+    padding-bottom: 45px;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.ourworkbg .ourworkbody .filter h5 {
+    display: inline-block;
+    float: left;
+    color: #222222;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption {
+    float: right;
+    width: 800px;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption ul {
+    float: right;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption li {
+    float: left;
+    padding-left: 20px;
+    color: #6c6c6c;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption li:after {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background: #6c6c6c;
+    left: 10px;
+    top: 0;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption li:nth-child(1):after {
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    left: 10px;
+    content: '';
+    background: white;
+    top: 0;
+}
+
+.ourworkbg .ourworkbody .filter .filteroption ul li.active {
+    color: #222222;
+}
+
+.workimages {
+    overflow: hidden;
+}
+
+.workimages .workimg {
+    width: 264px;
+    height: 235px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.workimages .workimg img {
+    display: block;
+}
+
+.workimages .workimg .workimgoverlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #222222;
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.workimages .workimg:hover .workimgoverlay {
+    left: 0;
+}
+
+.workimages .workimg .workimgoverlay h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffff;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-top: 25%;
+}
+
+.workimages .workimg .workimgoverlay p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #b2b2b2;
+    font-family: 'Opens sans', sans-serif;
+}
+
+.workimages .workimg .workimgoverlay a {
+    padding-top: 30px;
+    display: block;
+}
+
+.workimages .workimg .workimgoverlay a i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #f4a744;
+    color: #f4a744;
+    line-height: 40px;
+}
+
+.workmarginleft {
+    margin-left: 28px;
+}
+
+.workmarginbottom {
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+/*---------------------*/
+/*our work end */
+/*---------------------*/
+
+
+/*---------------------*/
+/**** testimonial ***/
+/*---------------------*/
+
+.testimonialbg {
+    background-image: url(../images/client-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px 80px;
+}
+
+.testimonialbody {}
+
+.testimonialbody p {
+    text-align: center;
+    color: #9b9b9b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 60px
+}
+/*---------------------*/
+/**** testimonial end***/
+/*---------------------*/
+
+/*---------------------*/
+/**** contact start ***/
+/*---------------------*/
+
+.contactbg {
+    color: #837f7f;
+}
+
+.contactbody {
+    width: 750px;
+    padding: 100px 0px 70px;
+}
+
+.contactbody .commonheading h3 {
+    color: #403a3a;
+
+}
+
+.contactform {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.contactform form ul {}
+
+.contactform form ul li {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.contactform form ul li input {
+    width: 350px;
+    height: 25px;
+}
+
+.contactform form textarea {
+    width: 725px;
+    display: block;
+}
+
+.contactform form button {
+    display: inline-block;
+    padding: 5px 40px;
+    background: #FCAC45;
+    color: white;
+    float: right;
+    margin-right: 22px
+}
+
+/*---------------------*/
+/**** contact end ***/
+/*---------------------*/
+
+/*---------------------*/
+/**** fooerpart ***/
+/*---------------------*/
+
+.footerbg {
+    background: #272727;
+}
+
+.footerbody {
+    padding: 20px 0px;
+}
+
+.footerbody p {
+    display: inline-block;
+    color: #b2b2b2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.footerbody ul {
+    float: right;
+}
+
+.footerbody ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+.footerbody ul li a {
+    color: #b2b2b2;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b2b2b2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.footerbody ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%)translateX(-50%);
+}
+/*---------------------*/
+/**** fooerpart end***/
+/*---------------------*/
